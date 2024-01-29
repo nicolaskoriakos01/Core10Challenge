@@ -105,11 +105,13 @@ public class ExecuteRequestSteps {
         for (WeatherForecastResponseMap weatherData : weatherForecastResponseMap) {
             System.out.println(weatherData.getTemperatureC());
             System.out.println((int) Math.ceil((double) ((weatherData.getTemperatureF() - 32) * 5) / 9));
-            if (weatherData.getTemperatureC() != (int) Math.ceil((double) ((weatherData.getTemperatureF() - 32) * 5) / 9)) {
-                return false;
-            } else if ((weatherData.getTemperatureC() - (Math.ceil((double) ((weatherData.getTemperatureF() - 32) * 5) / 9))) < 2) {
-                return true; // added this else-if because the formula it's not perfect and sometimes its a one degree difference
-            } //  this should cover those cases
+            if ((weatherData.getTemperatureC() - (Math.ceil((double) ((weatherData.getTemperatureF() - 32) * 5) / 9))) < 2) {
+                System.out.println((weatherData.getTemperatureC() - (Math.ceil((double) ((weatherData.getTemperatureF() - 32) * 5) / 9))));
+                return true; // this if is created because the formula it's not perfect and sometimes its a one degree difference this should cover those cases
+            } else if (weatherData.getTemperatureC() != (int) Math.ceil((double) ((weatherData.getTemperatureF() - 32) * 5) / 9)) {
+                System.out.println((weatherData.getTemperatureC() - (Math.ceil((double) ((weatherData.getTemperatureF() - 32) * 5) / 9))));
+                return false; // if the temperature it's not a match and it's difference is more than 2 degrees then we can consider it a failure
+            }
         }
         // If all temperature data validations pass, return true
         return true;

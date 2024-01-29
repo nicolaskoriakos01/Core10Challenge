@@ -1,4 +1,4 @@
-Feature: Special Order Services - Get Product Id
+Feature: Weather Forecast
 
   @T001 @Regression @WeatherServices @WeatherForecast
   Scenario: Validate GET Happy Path weather-forecast

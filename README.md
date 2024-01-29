@@ -27,7 +27,10 @@ if you aren't you can contact me and I'll be happy to help :)
 This is a one endpoint test plan so I decided to keep it short and to the point, based on the fact that we only need to execute a GET API most of the test cases are going to be positive because we don’t really have to do any data input besides the url itself.
 
 # Background before test: 
-It is expected to get a 200 response everytime we run the WeatherForecast endpoint
+It is expected to get a 200 response everytime we run the WeatherForecast endpoint.
+
+<br>
+On the fisr tab you have the test cases and on the second one the bugs.
 
  1 - <a href="https://docs.google.com/spreadsheets/d/1NO5AxRx33iBmbPRH-ndFqp2hico77aRNwyJrw28p6tU/edit#gid=0" target="_blank">Positive Test cases and bugs.</a> <br>
  2 - For the negative test cases I decided to try only one, this would be running an invalid endpoint: <br>

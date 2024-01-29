@@ -42,6 +42,8 @@ Test result -> Pass <br>
 
 # Test Automation
 
+PRE-REQUISITES: JAVA INSTALLED(With JAVA_HOME Set Up), MAVEN INSTALLED
+
 For this part I decided to user Java + RestAssured with cucumber and TestNG.
 I decided to automate a single testcase where it validates the data. in this test case the data validated is the date and the temperature conversion.<br><br>
 The validation on date is to check if any of the dates showed are from before the current date.<br><br>

@@ -54,7 +54,7 @@ If you have any question please let me know!
 # HOW TO RUN IT
 
 1 - you should clone this repo to your local machine. <br>
-2 - Open the project on the IDE of yoour choice. <br>
+2 - Open the project on the IDE of your choice. <br>
 3 - Navigate to the GET_WeatherForecast.feature file. <br>
 4 - hit the run button. <br>
 

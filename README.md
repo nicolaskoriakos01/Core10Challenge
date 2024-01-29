@@ -14,12 +14,12 @@ Before we begin, there are a couple of steps we should take to ensure everything
 1 - You should have docker installed (this is to run the API provided by Core 10).
 
 2 - Now that we have docker we should get the repo from the API we are testing.<br><br>
-here you go: https://github.com/alexmgriffiths/compose-weather  now that you have it you just neeed to do a git clone on it :D
+here you go: https://github.com/alexmgriffiths/compose-weather  now that you have it you just need to do a git clone on it :D
 
 3 - For our final step the only thing you need to do is go to the folder (using your CMD) where you have the compose-weather repo and there run this command: <b> docker-compose up -d <b>
 
 4 - if everything went right we should be able to start testing. <br><br>
-a safe bet in order to check if everytthing is okay is trying to access the following link: http://localhost:8080/swagger/index.html you should be able to access it. <br><br>
+a safe bet in order to check if everything is okay is trying to access the following link: http://localhost:8080/swagger/index.html you should be able to access it. <br><br>
 if you aren't you can contact me and I'll be happy to help :)
 
 # TEST PLAN
@@ -44,7 +44,7 @@ Test result -> Pass <br>
 
 PRE-REQUISITES: JAVA INSTALLED(With JAVA_HOME Set Up), MAVEN INSTALLED
 
-For this part I decided to user Java + RestAssured with cucumber and TestNG.
+For this part I decided to use Java + RestAssured with cucumber and TestNG.
 I decided to automate a single testcase where it validates the data. in this test case the data validated is the date and the temperature conversion.<br><br>
 The validation on date is to check if any of the dates showed are from before the current date.<br><br>
 The validation for temperature is to check if the conversion from Farenheit to celcius work correctly.<br><br>

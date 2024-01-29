@@ -73,9 +73,6 @@ public class ExecuteRequestSteps {
 
         Assert.assertFalse(validateWeatherDate(weatherForecastResponseMap));
         Assert.assertTrue(validateTemperatureData(weatherForecastResponseMap));
-
-
-        WeatherForecastResponseMap weatherData = weatherForecastResponseMap[0];
     }
 
     /**
